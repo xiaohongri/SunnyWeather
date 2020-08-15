@@ -1,13 +1,15 @@
-package com.example.sunnyweather
+package com.sunnyweather.android
 
 import android.annotation.SuppressLint
 import android.app.Application
 import android.content.Context
 
-class SunnyWeatherApplication :Application(){
+class SunnyWeatherApplication : Application() {
 
-    companion object{
-        const val TOKEN = "Rp2eTxJhTEHcgfsH"
+    companion object {
+
+        const val TOKEN = "Rp2eTxJhTEHcgfsH" // 填入你申请到的令牌值
+
         @SuppressLint("StaticFieldLeak")
         lateinit var context: Context
     }
@@ -16,4 +18,5 @@ class SunnyWeatherApplication :Application(){
         super.onCreate()
         context = applicationContext
     }
+
 }
